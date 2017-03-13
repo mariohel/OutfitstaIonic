@@ -22,13 +22,19 @@
       <ion-icon name="cart" item-right (click)="itemCart($event, item)"></ion-icon>
     </button>
   </ion-list>
-  <div class="detail" *ngIf="selectedItem" padding-horizontal>   
-    <img [src]="selectedItem.img">
-    <ion-icon name="cart" (click)="itemCart($event, selectedItem)"></ion-icon>
-    <ion-item no-lines>
-      <b item-left>{{selectedItem.title}}</b>
+  <ion-card class="detail" *ngIf="selectedItem"> 
+    <img [src]="selectedItem.img">   
+    <ion-item>
+      <b item-left>
+        {{selectedItem.title}}        
+      </b>
       <p item-right>${{selectedItem.price}}</p>
     </ion-item>
-    <div padding-horizontal>{{selectedItem.desc}}</div>
-  </div>
+    <ion-card-content>
+      <p>
+        {{selectedItem.desc}}
+      </p>      
+    </ion-card-content>
+    <ion-icon name="cart" (click)="itemCart($event, selectedItem)"></ion-icon>
+  </ion-card>  
 </ion-content>
