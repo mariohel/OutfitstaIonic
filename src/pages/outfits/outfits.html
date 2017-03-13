@@ -4,9 +4,10 @@
       <ion-icon name="menu"></ion-icon>       
     </button>
     <ion-title>Outfits</ion-title>
-    <ion-buttons end>
+    <ion-buttons end padding-right>
       <button ion-button icon-only (click)="cartClicked()">
-        <ion-icon name="cart"></ion-icon><div class="cart">{{cartItems.length}}</div>
+        <ion-badge  class="cart">{{cartItems.length}}</ion-badge>
+        <ion-icon name="cart"></ion-icon>        
       </button>
     </ion-buttons>
   </ion-navbar>
