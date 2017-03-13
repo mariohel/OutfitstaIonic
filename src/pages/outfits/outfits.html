@@ -15,18 +15,20 @@
 <ion-content>
   <ion-list>
     <button ion-item  no-lines *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-img width="80" height="80"  [src]="item.img" item-left ></ion-img>      
-      <p item-left><b>{{item.title}}</b><br>{{item.price}}</p>  
+      <ion-thumbnail item-left>
+          <img   [src]="item.img">
+      </ion-thumbnail>      
+      <p item-left><b>{{item.title}}</b><br>${{item.price}}</p>  
       <ion-icon name="cart" item-right (click)="itemCart($event, item)"></ion-icon>
     </button>
   </ion-list>
-  <div *ngIf="selectedItem" padding>   
+  <div class="detail" *ngIf="selectedItem" padding-horizontal>   
     <img [src]="selectedItem.img">
-    <ion-item text-wrap  no-lines>
-      <ion-icon name="cart" item-right (click)="itemCart($event, selectedItem)"></ion-icon>
+    <ion-icon name="cart" (click)="itemCart($event, selectedItem)"></ion-icon>
+    <ion-item no-lines>
       <b item-left>{{selectedItem.title}}</b>
-      <p item-content>{{selectedItem.desc}}</p>  
+      <p item-right>${{selectedItem.price}}</p>
     </ion-item>
-    
+    <div padding-horizontal>{{selectedItem.desc}}</div>
   </div>
 </ion-content>

@@ -4,4 +4,15 @@ page-outfits {
         position: absolute;
         font-size: 12px;
     }
+    .detail {
+        img {
+            margin:0 25%;
+        }
+        ion-icon{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 20px;
+        }
+    }
 }

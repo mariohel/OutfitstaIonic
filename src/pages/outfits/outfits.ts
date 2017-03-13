@@ -25,11 +25,14 @@ export class OutfitsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams , public service: OutfitService) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
+    let items = navParams.get('cartItems');
+    this.cartItems = items ? items : this.cartItems ;
   }
 
   itemTapped(event, item) {    
     this.navCtrl.push(OutfitsPage, {
-      item: item
+      item: item,
+      cartItems : this.cartItems
     });
   }
 
