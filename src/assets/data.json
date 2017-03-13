@@ -1,0 +1,110 @@
+[
+        {
+          "title":  "Casablanca Dress",
+          "img":    "assets/outfits/dress1.png",
+          "desc":   "Adrianna Papell Women's Casablanca Sleeveless Red Dress",
+          "price":  49.99,
+          "outfit_type":"dress"
+        },
+        {
+          "title":  "Casabla Dress",
+          "img":    "assets/outfits/dress2.png",
+          "desc":   "Papell Women's Casabla Sleeveless Dress",
+          "price":  59.49,
+          "outfit_type":"dress"
+        },
+        {
+          "title":  "Pabla Dress",
+          "img":    "assets/outfits/dress3.png",
+          "desc":   "Pabla Women's Dress",
+          "price":  49.49,
+          "outfit_type":"dress"
+        },
+        {
+          "title":  "Shirt 1",
+          "img":    "assets/outfits/shirt1.png",
+          "desc":   "Shirt 1 Description",
+          "price":  29.49,
+          "outfit_type":"shirt"
+        },
+        {
+          "title":  "Shirt 2",
+          "img":    "assets/outfits/shirt2.png",
+          "desc":   "Shirt 2 Description",
+          "price":  19.49,
+          "outfit_type":"shirt"
+        },
+        {
+          "title":  "Shirt 3",
+          "img":    "assets/outfits/shirt3.png",
+          "desc":   "Shirt 3 Description",
+          "price":  39.49,
+          "outfit_type":"shirt"
+        },
+        {
+          "title":  "Short 1",
+          "img":    "assets/outfits/short1.png",
+          "desc":   "Short 1 Description",
+          "price":  29.49,
+          "outfit_type":"short"
+        },
+        {
+          "title":  "Short 2",
+          "img":    "assets/outfits/short2.png",
+          "desc":   "Short 2 Description",
+          "price":  29.49,
+          "outfit_type":"short"
+        },
+        {
+          "title":  "Pant 1",
+          "img":    "assets/outfits/pant1.png",
+          "desc":   "Pant 1 Description",
+          "price":  49.49,
+          "outfit_type":"pant"
+        },
+        {
+          "title":  "Pant 2",
+          "img":    "assets/outfits/pant2.png",
+          "desc":   "Pant 2 Description",
+          "price":  29.49,
+          "outfit_type":"pant"
+        },
+        {
+          "title":  "Shoe 1",
+          "img":    "assets/outfits/shoe1.png",
+          "desc":   "Shoe 1 Description",
+          "price":  29.49,
+          "outfit_type":"shoe"
+        },
+        {
+          "title":  "shoe 2",
+          "img":    "assets/outfits/shoe2.png",
+          "desc":   "Shoe 2 Description",
+          "price":  29.49,
+          "outfit_type":"shoe"
+        },        {
+          "title":  "shoe 3",
+          "img":    "assets/outfits/shoe3.png",
+          "desc":   "Shoe 3 Description",
+          "price":  49.49,
+          "outfit_type":"shoe"
+        },        {
+          "title":  "shoe 4",
+          "img":    "assets/outfits/shoe4.png",
+          "desc":   "Shoe 4 Description",
+          "price":  19.59,
+          "outfit_type":"shoe"
+        },        {
+          "title":  "shoe 5",
+          "img":    "assets/outfits/shoe5.png",
+          "desc":   "Shoe 5 Description",
+          "price":  59.19,
+          "outfit_type":"shoe"
+        },        {
+          "title":  "shoe 6",
+          "img":    "assets/outfits/shoe6.png",
+          "desc":   "Shoe 6 Description",
+          "price":  26.49,
+          "outfit_type":"shoe"
+        }
+]

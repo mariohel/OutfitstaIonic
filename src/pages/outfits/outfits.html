@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>       
+    </button>
+    <ion-title>Outfits</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="cartClicked()">
+        <ion-icon name="cart"></ion-icon><div class="cart">{{cartItems.length}}</div>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item  no-lines *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-img width="80" height="80"  [src]="item.img" item-left ></ion-img>      
+      <p item-left><b>{{item.title}}</b><br>{{item.price}}</p>  
+      <ion-icon name="cart" item-right (click)="itemCart($event, item)"></ion-icon>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>   
+    <img [src]="selectedItem.img">
+    <ion-item text-wrap  no-lines>
+      <ion-icon name="cart" item-right (click)="itemCart($event, selectedItem)"></ion-icon>
+      <b item-left>{{selectedItem.title}}</b>
+      <p item-content>{{selectedItem.desc}}</p>  
+    </ion-item>
+    
+  </div>
+</ion-content>
