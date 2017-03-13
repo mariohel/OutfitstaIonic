@@ -13,6 +13,54 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content  padding>
+  <div class="card-background-page">
+    <ion-card *ngFor="let item of outfits">
 
+      <img [src]="item.img"/>
+      <div class="card-title">{{item.title}}</div>
+      <div class="card-subtitle"><b>${{item.price}}</b></div>
+
+    </ion-card>
+  </div>
+
+  <form  [formGroup]="checkOutForm" (ngSubmit)="onSubmit()">
+    <h2 padding-top >Checkout Details</h2>
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input formControlName="name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+
+    <div formGroupName="address">
+      <ion-item>
+        <ion-label stacked>State</ion-label>
+        <ion-select formControlName="state">
+          <ion-option *ngFor="let state of states" [value]="state">{{state}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Street</ion-label>
+          <ion-textarea formControlName="street" name="street"></ion-textarea>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label stacked>City</ion-label>
+        <ion-input formControlName="city" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Zip</ion-label>
+        <ion-input formControlName="zip" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <button ion-button type="submit" block>Submit</button>
+
+  </form>
 </ion-content>
